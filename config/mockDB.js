@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
 
-// MOCK DATABASE - as required by assignment
+// MOCK DATABASE
 // Stores users with: id, email, password (hashed), role
 
 const users = [
@@ -13,13 +13,13 @@ const users = [
     {
         id: '2',
         email: 'premium@test.com',
-        password: 'premium123',  // Will be hashed on initialization
+        password: 'premium123', 
         role: 'Premium_User'
     },
     {
         id: '3',
         email: 'free@test.com',
-        password: 'free123',  // Will be hashed on initialization
+        password: 'free123', 
         role: 'Free_User'
     }
 ];

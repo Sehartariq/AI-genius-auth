@@ -54,7 +54,7 @@ const login = async (req, res) => {
         const accessToken = generateAccessToken(user);
         const refreshToken = generateRefreshToken(user);
 
-        // Set refresh token in httpOnly cookie (secure!)
+        // Set refresh token in httpOnly cookie (secure)
         res.cookie('refreshToken', refreshToken, {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production',

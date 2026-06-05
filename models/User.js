@@ -1,6 +1,6 @@
 const mockDB = require('../config/mockDb');
 
-// Mock User Model - satisfies "mock database" requirement
+// Mock User Model 
 class User {
     static async findOne(query) {
         if (query.email) {
